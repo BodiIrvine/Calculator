@@ -1,31 +1,23 @@
-# this will import the math module
-import math
-
-
+# This will import the math module
 import math
 
 def Quadratic_Formula_Calculator():
     # Collect values from the user
-    A = 1  # Assuming A, B, C are predefined
-    B = 5
-    C = 6
+    A = int(input("What is the A value: "))
+    B = int(input("What is the B value: "))
+    C = int(input("What is the C value: "))
 
     # Calculate the discriminant
     D = B ** 2 - 4 * A * C
-    X = math.sqrt(-(D))
 
     # Check if the discriminant is non-negative
     if D >= 0:
-    #here is where i will return the two roots
         sqrt_D = math.sqrt(D)
         Z = (-B + sqrt_D) / (2 * A)
         Y = (-B - sqrt_D) / (2 * A)
         return Z, Y
-
-    if D < 0 and :
-        return
-
+    else:
+        return "Imaginary roots"
 
 result = Quadratic_Formula_Calculator()
 print(result)
-
